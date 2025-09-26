@@ -1,0 +1,202 @@
+[
+  {
+    "player_image": "https://picsum.photos/1000?random=1",
+    "player_name": "Shakib Al Hasan",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 4.9,
+    "batting_style": "Left-handed",
+    "bowling_style": "Slow left-arm orthodox",
+    "price": "৳ 8,00,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=2",
+    "player_name": "Tamim Iqbal",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 4.7,
+    "batting_style": "Left-handed",
+    "bowling_style": "–",
+    "price": "৳ 6,00,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=3",
+    "player_name": "Mushfiqur Rahim",
+    "player_country": "Bangladesh",
+    "playing_role": "Wicket-keeper Batsman",
+    "rating": 4.5,
+    "batting_style": "Right-handed",
+    "bowling_style": "–",
+    "price": "৳ 3,80,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=4",
+    "player_name": "Mustafizur Rahman",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 4.6,
+    "batting_style": "Right-handed",
+    "bowling_style": "Left-arm fast-medium",
+    "price": "৳ 4,50,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=5",
+    "player_name": "Liton Das",
+    "player_country": "Bangladesh",
+    "playing_role": "Wicket-keeper Batsman",
+    "rating": 4.4,
+    "batting_style": "Right-handed",
+    "bowling_style": "–",
+    "price": "৳ 3,00,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=6",
+    "player_name": "Taskin Ahmed",
+    "player_country": "Bangladesh",
+    "playing_role": "Fast Bowler",
+    "rating": 4.3,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm fast",
+    "price": "৳ 2,50,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=7",
+    "player_name": "Soumya Sarkar",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 4.0,
+    "batting_style": "Left-handed",
+    "bowling_style": "Right-arm medium",
+    "price": "৳ 1,80,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=8",
+    "player_name": "Afif Hossain",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 4.1,
+    "batting_style": "Left-handed",
+    "bowling_style": "Right-arm off break",
+    "price": "৳ 1,50,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=9",
+    "player_name": "Mehidy Hasan Miraz",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 4.6,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm off break",
+    "price": "৳ 3,50,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=10",
+    "player_name": "Nurul Hasan",
+    "player_country": "Bangladesh",
+    "playing_role": "Wicket-keeper Batsman",
+    "rating": 4.0,
+    "batting_style": "Right-handed",
+    "bowling_style": "–",
+    "price": "৳ 1,40,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=11",
+    "player_name": "Najmul Hossain Shanto",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 4.1,
+    "batting_style": "Left-handed",
+    "bowling_style": "–",
+    "price": "৳ 1,60,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=12",
+    "player_name": "Towhid Hridoy",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 3.9,
+    "batting_style": "Right-handed",
+    "bowling_style": "–",
+    "price": "৳ 90,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=13",
+    "player_name": "Anamul Haque",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman / Wicket-keeper",
+    "rating": 3.8,
+    "batting_style": "Right-handed",
+    "bowling_style": "–",
+    "price": "৳ 80,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=14",
+    "player_name": "Rony Talukdar",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 3.6,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm off break",
+    "price": "৳ 60,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=15",
+    "player_name": "Mosaddek Hossain",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 3.9,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm off break",
+    "price": "৳ 1,10,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=16",
+    "player_name": "Taijul Islam",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 3.8,
+    "batting_style": "Left-handed",
+    "bowling_style": "Left-arm orthodox",
+    "price": "৳ 70,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=17",
+    "player_name": "Sabbir Rahman",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 3.7,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm medium",
+    "price": "৳ 75,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=18",
+    "player_name": "Al-Amin Hossain",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 3.6,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm fast-medium",
+    "price": "৳ 65,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=19",
+    "player_name": "Shahadat Hossain",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 3.5,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm fast-medium",
+    "price": "৳ 50,00,000"
+  },
+  {
+    "player_image": "https://picsum.photos/1000?random=20",
+    "player_name": "Mahmudullah Riyad",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 4.2,
+    "batting_style": "Right-handed",
+    "bowling_style": "Right-arm off break",
+    "price": "৳ 2,20,00,000"
+  }
+]
