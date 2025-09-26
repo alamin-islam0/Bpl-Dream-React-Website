@@ -2,10 +2,10 @@ import React from "react";
 import NavImg from "../../assets/logo.png";
 import CurrencyImg from "../../assets/currency.svg";
 
-const Header = () => {
+const Header = ({availableBalance}) => {
   return (
     <div className="bg-white ">
-      <div className="navbar py-[15px] max-w-[1200px] mx-auto ">
+      <div className="navbar py-[25px] max-w-[1200px] mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +55,7 @@ const Header = () => {
         </div>
         <div className="navbar-end">
           <a className="btn bg-white text-[#131313] border-[#13131357]">
-            0 Coin <img className="w-[19px]" src={CurrencyImg} alt="" />
+            {availableBalance} Coin <img className="w-[19px]" src={CurrencyImg} alt="" />
           </a>
         </div>
       </div>

@@ -1,0 +1,80 @@
+import React, { useState } from 'react';
+import FlagImg from "../../assets/report 1.svg";
+import UserImg from "../../assets/Group.svg";
+
+const PlayerCard = ({ player, setAvailableBalance, availableBalance, purchasePlayer, setPurchasedPlayer}) => {
+
+    const [isSelected, setIsSelected] = useState(false);
+    const handleSelected = (playerData) => {
+        const playerPrice = parseInt(playerData.price.split("৳").join("").split(",").join(""))
+        if (availableBalance < playerPrice){
+            alert("You have not enough coin")
+            return
+        }
+        setIsSelected(true)
+        setAvailableBalance(availableBalance - playerPrice);
+
+        setPurchasedPlayer([...purchasePlayer, playerData])
+    }
+
+    return (
+        <div className="card w-96 shadow-sm rounded-2xl border-1 border-[#13131320] p-[25px] bg-white">
+            <figure>
+                <img
+                    className="rounded-2xl"
+                    src={player.player_image}
+                    alt="Shoes"
+                />
+            </figure>
+            <div className="card-body p-0 pt-[25px] gap-0">
+                <div className="flex justify-between border-b-1 border-[#13131320] pb-[16px]">
+                    <h2 className="card-title text-[#131313] text-[20px] font-bold">
+                        <img src={UserImg} alt="" />
+                        {player.player_name}
+                    </h2>
+                </div>
+                <div className="flex justify-between border-b-1 border-[#13131320] py-[16px]">
+                    <h2 className="card-title text-[#131313] text-[16px]">
+                        <img src={FlagImg} alt="" />
+                        {player.player_country}
+                    </h2>
+                    <button className="btn btn-primary border-0 shadow-none rounded-[10px] text-[#131313] bg-[#F3F3F3]">
+                        {player.playing_role}
+                    </button>
+                </div>
+                <div className="border-b-1 border-[#13131320] py-[16px]">
+                    <div className="flex justify-between pt-[16px]">
+                        <h2 className="card-title text-[#131313] font-bold text-[16px]">
+                            {" "}
+                            {player.rating}
+                        </h2>
+                        <h2 className="card-title text-[#131313] font-normal text-[16px]">
+                            {player.rating}
+                        </h2>
+                    </div>
+                    <div className="flex justify-between pt-[16px]">
+                        <h2 className="card-title text-[#131313] text-[16px]">
+                            {player.batting_style}
+                        </h2>
+                        <button className="border-0 shadow-none rounded-[10px] text-[#131313] text-[16px]">
+                            {player.bowling_style}
+                        </button>
+                    </div>
+                </div>
+                <div className="flex justify-between py-[16px]">
+                    <h2 className="card-title text-[#131313] text-[16px]">
+                        Price: {player.price}
+                    </h2>
+                    <button disabled={isSelected}
+                        onClick={() => handleSelected(player)}
+                        className="btn btn-primary border-1 border-[#13131320] shadow-none rounded-[10px] text-[#131313] bg-[#f3f3f300]"
+                    >
+                        {isSelected === true ? "Selected" : "Choose Player"}
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default PlayerCard;
