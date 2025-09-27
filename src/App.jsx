@@ -1,5 +1,6 @@
 import { Suspense, useState } from "react";
 import "./App.css";
+import { ToastContainer} from 'react-toastify';
 import Header from "./components/Header/Header";
 import AvailablePayers from "./components/Available players/AvailablePayers";
 import SelectedPlayers from "./components/Selected Players/SelectedPlayers";
@@ -17,7 +18,6 @@ function App() {
   const [purchasePlayer, setPurchasedPlayer] = useState([])
   const removePlayer = (p) => {
     const filteredData = purchasePlayer.filter(ply => ply.player_name!==p.player_name)
-    console.log(filteredData)
     setPurchasedPlayer(filteredData)
     setAvailableBalance(availableBalance+parseInt(p.price.split("৳").join("").split(",").join("")))
   }
@@ -54,9 +54,7 @@ function App() {
         <SelectedPlayers purchasePlayer ={purchasePlayer} removePlayer = {removePlayer}></SelectedPlayers>
       </Suspense>
       }
-      
-
-      
+      <ToastContainer/>
     </>
   );
 }

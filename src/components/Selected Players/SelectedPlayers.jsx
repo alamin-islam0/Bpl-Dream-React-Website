@@ -7,7 +7,13 @@ const SelectedPlayers = ({ purchasePlayer, removePlayer}) => {
     <div className="max-w-[1200px] h-[1000px] mx-auto mt-16">
         
       {
-        purchasePlayer.map(player => <SelectedPlayerCard player = {player} removePlayer = {removePlayer}></SelectedPlayerCard>)
+        purchasePlayer.map(player => (
+          <SelectedPlayerCard
+            key={player.player_name}
+            player={player}
+            removePlayer={removePlayer}
+          ></SelectedPlayerCard>
+        ))
       }
       </div>
   );

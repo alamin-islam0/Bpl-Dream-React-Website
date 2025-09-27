@@ -2,7 +2,7 @@ import React from "react";
 import NavImg from "../../assets/logo.png";
 import CurrencyImg from "../../assets/currency.svg";
 
-const Header = ({availableBalance}) => {
+const Header = ({ availableBalance }) => {
   return (
     <div className="bg-white ">
       <div className="navbar py-[25px] max-w-[1200px] mx-auto ">
@@ -55,7 +55,8 @@ const Header = ({availableBalance}) => {
         </div>
         <div className="navbar-end">
           <a className="btn bg-white text-[#131313] border-[#13131357]">
-            {availableBalance} Coin <img className="w-[19px]" src={CurrencyImg} alt="" />
+            {availableBalance.toLocaleString()} Coin{" "}
+            <img className="w-[19px]" src={CurrencyImg} alt="" />
           </a>
         </div>
       </div>
