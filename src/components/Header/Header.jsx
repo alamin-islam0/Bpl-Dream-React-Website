@@ -5,7 +5,7 @@ import CurrencyImg from "../../assets/currency.svg";
 const Header = ({ availableBalance }) => {
   return (
     <div className="bg-white ">
-      <div className="navbar py-[25px] max-w-[1200px] mx-auto ">
+      <div className="navbar py-[25px] max-w-[1200px] mx-auto px-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

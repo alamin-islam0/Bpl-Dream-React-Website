@@ -7,11 +7,11 @@ const SelectedPlayerCard = ({ player, removePlayer }) => {
   };
 
   return (
-    <div className="flex items-center justify-between bg-white text-black rounded-xl px-4 py-3 mb-3 shadow border">
+    <div className="flex flex-col sm:flex-row sm:items-center justify-between bg-white text-black rounded-xl px-4 py-3 mb-3 shadow border gap-3">
       <div className="flex items-center gap-4">
         <div className="" />
         <img
-          className="h-[80px] w-[80px] rounded-2xl"
+          className="h-[64px] w-[64px] sm:h-[80px] sm:w-[80px] rounded-2xl object-cover"
           src={player.player_image}
           alt=""
         />
@@ -20,9 +20,9 @@ const SelectedPlayerCard = ({ player, removePlayer }) => {
           <p className="text-sm text-gray-600">{player.batting_style}</p>
         </div>
       </div>
-      <div>
-        <img onClick={handleRemove} src={TrashIcon} alt="" />
-      </div>
+      <button className="self-end sm:self-auto" onClick={handleRemove}>
+        <img src={TrashIcon} alt="" />
+      </button>
     </div>
   );
 };
