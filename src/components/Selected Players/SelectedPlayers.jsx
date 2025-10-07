@@ -4,7 +4,7 @@ import SelectedPlayerCard from "../selected player card/SelectedPlayerCard";
 const SelectedPlayers = ({ purchasePlayer, removePlayer}) => {
   console.log(purchasePlayer);
   return (
-    <div className="max-w-[1200px] h-[1000px] mx-auto mt-16">
+    <div className="max-w-[1200px] mx-auto mt-16 px-4">
         
       {
         purchasePlayer.map(player => (

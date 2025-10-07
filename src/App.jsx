@@ -25,13 +25,13 @@ function App() {
   return (
     <>
       <Header availableBalance = {availableBalance}></Header>
-      <div className="flex justify-between items-center max-w-[1200px] mx-auto bg-white pt-8">
-        <h1 className="text-2xl font-bold text-black">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 max-w-[1200px] mx-auto bg-white pt-8 px-4">
+        <h1 className="text-2xl font-bold text-black text-center sm:text-left">
           {
             toggle ===true?"Available Players": `Available Players  (${purchasePlayer.length}/6)`
           }
         </h1>
-        <div className="">
+        <div className="w-full sm:w-auto flex justify-center sm:justify-end">
           <button onClick={()=> setToggle(true)}
             className={`p-3 border-r-0 border-1 rounded-l-2xl border-[#13131320] ${toggle === true?"bg-[#E7FE29]": ""} text-black`}
             type="button"

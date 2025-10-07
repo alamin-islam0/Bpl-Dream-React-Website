@@ -6,7 +6,7 @@ const AvailablePayers = ({ playersPromise, setAvailableBalance, availableBalance
 
   return (
     <div className="bg-white">
-      <div className="max-w-[1200px] mx-auto pt-8 pb-16 grid grid-cols-3 gap-6">
+      <div className="max-w-[1200px] mx-auto pt-8 pb-16 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {playersData.map(player => (
           <PlayerCard
             key={player.player_name}
