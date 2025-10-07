@@ -1,16 +1,36 @@
-# React + Vite
+# Site Functionality
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web app lets users build a fantasy team by selecting up to 6 players within a virtual coin balance.
 
-Currently, two official plugins are available:
+## Core Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Player listing: Loads players from `public/players.json` and displays them as responsive cards.
+- Balance tracking: Shows available coins in the header and updates after purchases.
+- Select players: Add a player if you have enough coins and haven't selected them already.
+- Limits and validation: Prevents duplicate selections and caps total selected players at 6.
+- Selected list: View selected players and remove any to refund coins to the balance.
+- Responsive UI: Mobile-first layout with Tailwind/DaisyUI utilities for grids, cards, and navigation.
 
-## React Compiler
+## Key UI Sections
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Header: Displays logo, simple nav, and current coin balance.
+- Available Players: Grid of player cards with role, country, rating, styles, and price.
+- Selected Players: List of chosen players with quick remove action.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- Tailwind CSS + DaisyUI
+- React Toastify for notifications
+
+## How It Works
+
+- Data Fetching: `src/App.jsx` fetches `players.json` and provides it to components.
+- Selection Flow: `PlayerCard` validates selection, adjusts balance, and updates the selected list.
+- Remove Flow: `SelectedPlayerCard` removes a player and refunds the coin cost.
+
+## Run Locally
+
+1. Install dependencies: `npm install`
+2. Start dev server: `npm run dev`
+3. Open the URL shown in the terminal
