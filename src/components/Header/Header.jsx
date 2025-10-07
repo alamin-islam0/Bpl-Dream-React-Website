@@ -5,7 +5,7 @@ import CurrencyImg from "../../assets/currency.svg";
 const Header = ({ availableBalance }) => {
   return (
     <div className="bg-white ">
-      <div className="navbar py-[25px] max-w-[1200px] mx-auto ">
+      <div className="navbar py-[25px] max-w-[1200px] mx-auto px-4 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,7 +54,7 @@ const Header = ({ availableBalance }) => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-white text-[#131313] border-[#13131357]">
+          <a className="btn bg-white text-[#131313] border-[#13131357] whitespace-nowrap text-sm sm:text-base gap-2">
             {availableBalance.toLocaleString()} Coin{" "}
             <img className="w-[19px]" src={CurrencyImg} alt="" />
           </a>

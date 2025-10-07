@@ -7,7 +7,7 @@ const SelectedPlayerCard = ({ player, removePlayer }) => {
   };
 
   return (
-    <div className="flex items-center justify-between bg-white text-black rounded-xl px-4 py-3 mb-3 shadow border">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white text-black rounded-xl px-4 py-3 mb-3 shadow border gap-4">
       <div className="flex items-center gap-4">
         <div className="" />
         <img
@@ -20,7 +20,7 @@ const SelectedPlayerCard = ({ player, removePlayer }) => {
           <p className="text-sm text-gray-600">{player.batting_style}</p>
         </div>
       </div>
-      <div>
+      <div className="self-end sm:self-auto">
         <img onClick={handleRemove} src={TrashIcon} alt="" />
       </div>
     </div>

@@ -39,7 +39,7 @@ const PlayerCard = ({
   };
 
   return (
-    <div className="card w-96 shadow-sm rounded-2xl border-1 border-[#13131320] p-[25px] bg-white">
+    <div className="card w-full shadow-sm rounded-2xl border-1 border-[#13131320] p-[25px] bg-white">
       <figure>
         <img className="rounded-2xl" src={player.player_image} alt="Shoes" />
       </figure>
